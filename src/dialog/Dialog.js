@@ -118,7 +118,7 @@ export default createComponent({
             size="large"
             class={[bem('confirm'), { [BORDER_LEFT]: hasButtons }]}
             loading={this.loading.confirm}
-            text={this.confirmButtonText || t('confirm')}
+            text="hello"
             style={{ color: this.confirmButtonColor }}
             onClick={() => {
               this.handleAction('confirm');
@@ -129,7 +129,7 @@ export default createComponent({
     );
 
     return (
-      <transition name="van-dialog-bounce">
+      <transition name="fade">
         <div
           vShow={this.value}
           role="dialog"
